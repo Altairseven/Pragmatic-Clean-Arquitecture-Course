@@ -5,6 +5,9 @@ namespace Bookify.Domain.Bookings;
 
 public class PricingService
 {
+    
+    
+    
     public PricingDetails CalculatePrice(Apartment apartment, DateRange period)
     {
         var currency = apartment.Price.Currency;
