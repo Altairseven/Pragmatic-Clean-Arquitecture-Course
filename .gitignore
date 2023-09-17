@@ -3,3 +3,14 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+.containers/
+.idea/
+.vs/*
+.containers/database/base/16384/pg_internal.init
+.containers/database/global/pg_internal.init
+.containers/database/postmaster.pid
+.containers/identity/kernel/process-uuid
+.containers/identity/keycloak.lock.db
+.containers/identity/keycloak.mv.db
+.containers/identity/keycloak.trace.db
+.containers/identity/tx-object-store/ShadowNoFileLockStore/defaultStore/EISNAME/0_ffffc0a80003_4e28edf_6505bc9a_20
