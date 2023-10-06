@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bookify.Domain.Apartments.ApartmentErrors">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Apartments\ApartmentErrors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookify.Domain.Users.User">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAABAAAAAAEQAAAAAAAAAAAg=</HashCode>
+      <FileName>Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookify.Domain.Users.UserErrors">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Users\UserErrors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookify.Domain.Reviews.Review">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAEAAAIAAAAAEAAAAgAAABAAEEAAAAAQAAAAAA=</HashCode>
+      <FileName>Reviews\Review.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Apartment" />
+      <Property Name="Booking" />
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookify.Domain.Reviews.ReviewErrors">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Reviews\ReviewErrors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookify.Domain.Bookings.BookingErrors">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAABAEgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bookings\BookingErrors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookify.Domain.Bookings.PricingService">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Bookings\PricingService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookify.Domain.Bookings.Booking">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <AssociationLine Name="User" Type="Bookify.Domain.Users.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.812" Y="5.261" />
+        <Point X="5.812" Y="5.756" />
+        <Point X="4.5" Y="5.756" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Status" Type="Bookify.Domain.Bookings.Enums.BookingStatus" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.688" Y="5.261" />
+        <Point X="6.688" Y="5.588" />
+        <Point X="6.688" Y="5.588" />
+        <Point X="6.688" Y="6.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIABAAAEwAASAAIAIGAQAAgAAAAAQACAAgACQAAAAIA=</HashCode>
+      <FileName>Bookings\Booking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Apartment" />
+      <Property Name="User" />
+      <Property Name="Status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookify.Domain.Apartments.Apartment">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEACAQAgAAAAIAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Apartments\Apartment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Amenities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="Bookify.Domain.Apartments.IApartmentRepository">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Apartments\IApartmentRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Bookify.Domain.Users.IUserRepository">
+    <Position X="12.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Users\IUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Bookify.Domain.Bookings.IBookingRepository">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Bookings\IBookingRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Bookify.Domain.Apartments.Amenity">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAABAIAIAAACAAACAAAA=</HashCode>
+      <FileName>Apartments\Enums\Amenity.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Bookify.Domain.Bookings.Enums.BookingStatus">
+    <Position X="5.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACwAAAIAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Bookings\Enums\BookingStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

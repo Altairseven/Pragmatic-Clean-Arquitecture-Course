@@ -1,4 +1,5 @@
 ﻿using Bookify.Domain.Abstractions;
+using Bookify.Domain.Apartments;
 using Bookify.Domain.Bookings;
 using Bookify.Domain.Bookings.Enums;
 using Bookify.Domain.Reviews.Events;
@@ -42,6 +43,13 @@ public sealed class Review : Entity<ReviewId>
     public Comment Comment { get; private set; }
 
     public DateTime CreatedOnUtc { get; private set; }
+
+
+    public Apartment? Apartment { get; private set; }
+    public Booking? Booking { get; private set; }
+    public User User { get; private set; }
+
+
 
     public static Result<Review> Create(
         Booking booking,

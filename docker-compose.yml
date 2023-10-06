@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: src/Bookify.Api/Dockerfile
     ports:
-      - "85:80"
-      - "5001:443"
+      - "80:80"
+      - "443:443"
     depends_on:
     - bookify-db
 

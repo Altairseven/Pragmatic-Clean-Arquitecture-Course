@@ -50,6 +50,9 @@ public sealed class Booking : Entity<BookingId>
     public DateTime? CompletedOnUtc { get; private set; }
     public DateTime? CancelledOnUtc { get; private set; }
 
+    public Apartment? Apartment { get; private set; }
+    public User? User { get; private set; }
+
     public static Booking Reserve(
         Apartment apartment,
         UserId userId,
